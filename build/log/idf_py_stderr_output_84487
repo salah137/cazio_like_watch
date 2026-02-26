@@ -1,0 +1,55 @@
+Command: /home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/salah/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/salah/projects/embedded/cazio/build/cazio.elf /home/salah/projects/embedded/cazio/build/bootloader/bootloader.elf -m '/home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/salah/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/salah/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x400868f2: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x40086352: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1590[0m
+[0m--- 0x400d665d: [0;33mhandle_input[0m[0m at [0;32m/home/salah/projects/embedded/cazio/main/main.c[0m[0m:[1;31m132[0m
+[0m--- 0x40086595: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x400868f2: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x40086352: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1590[0m
+[0m--- 0x400d665d: [0;33mhandle_input[0m[0m at [0;32m/home/salah/projects/embedded/cazio/main/main.c[0m[0m:[1;31m132[0m
+[0m--- 0x40086595: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x40087ede: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mxTaskGetSchedulerState[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m5031[0m
+[0m--- 0x400862e0: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1540[0m
+[0m--- 0x400d665d: [0;33mhandle_input[0m[0m at [0;32m/home/salah/projects/embedded/cazio/main/main.c[0m[0m:[1;31m132[0m
+[0m--- 0x40086595: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x400868f2: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x40086352: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1590[0m
+[0m--- 0x400d665d: [0;33mhandle_input[0m[0m at [0;32m/home/salah/projects/embedded/cazio/main/main.c[0m[0m:[1;31m132[0m
+[0m--- 0x40086595: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x400868f2: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x40086352: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1590[0m
+[0m--- 0x400d665d: [0;33mhandle_input[0m[0m at [0;32m/home/salah/projects/embedded/cazio/main/main.c[0m[0m:[1;31m132[0m
+[0m--- 0x40086595: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d9416: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d97d8: [0;33mtask_wdt_isr[0m[0m at [0;32m/home/salah/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082a75: [0;33m_xt_lowint1[0m[0m at [0;32m/home/salah/esp/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x40086392: [0;33mxQueueReceive[0m[0m at [0;32m/home/salah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1627[0m
+[0m--- 0x

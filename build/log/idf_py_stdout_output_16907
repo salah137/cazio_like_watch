@@ -1,0 +1,206 @@
+Command: /home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/salah/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/salah/projects/embedded/cazio/build/cazio.elf /home/salah/projects/embedded/cazio/build/bootloader/bootloader.elf -m '/home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/salah/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 30 2026 17:17:10[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0baf4h ( 47860) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001bb1c vaddr=3ffb0000 size=02420h (  9248) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001df44 vaddr=40080000 size=020d4h (  8404) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=144a0h ( 83104) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000344c8 vaddr=400820d4 size=0b850h ( 47184) load[0m
+[0;32mI (161) esp_image: segment 5: paddr=0003fd20 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (168) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (188) cpu_start: Pro cpu start user code[0m
+[0;32mI (188) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     cazio[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (200) app_init: Compile time:     Feb  4 2026 21:04:03[0m
+[0;32mI (205) app_init: ELF file SHA256:  768a769ed...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB3160 len 0002CEA0 (179 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D924 len 000126DC (73 KiB): IRAM[0m
+[0;33mW (259) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+Probing SSD1306...
+SSD1306 detected
+[0;32mI (300) main_task: Returned from app_main()[0m
+[0;32mI (300) I: 00[0m
+[0;32mI (1310) I: 00[0m
+[0;32mI (2310) I: 00[0m
+[0;32mI (3310) I: 00[0m
+[0;32mI (4310) I: 00[0m
+[0;32mI (5310) I: 00[0m
+[0;32mI (6310) I: 00[0m
+[0;32mI (7310) I: 00[0m
+[0;32mI (8310) I: 00[0m
+[0;32mI (9310) I: 00[0m
+[0;32mI (10310) I: 00[0m
+[0;32mI (11310) I: 00[0m
+[0;32mI (12310) I: 00[0m
+[0;32mI (13310) I: 00[0m
+[0;32mI (14310) I: 00[0m
+[0;32mI (15310) I: 00[0m
+[0;32mI (16310) I: 00[0m
+[0;32mI (17310) I: 00[0m
+[0;32mI (18310) I: 00[0m
+[0;32mI (19310) I: 00[0m
+[0;32mI (20310) I: 00[0m
+[0;32mI (21310) I: 00[0m
+[0;32mI (22310) I: 00[0m
+[0;32mI (23310) I: 00[0m
+[0;32mI (24310) I: 00[0m
+[0;32mI (25310) I: 00[0m
+[0;32mI (26310) I: 00[0m
+[0;32mI (27310) I: 00[0m
+[0;32mI (28310) I: 00[0m
+[0;32mI (29310) I: 00[0m
+[0;32mI (30310) I: 00[0m
+[0;32mI (31310) I: 00[0m
+[0;32mI (32310) I: 00[0m
+[0;32mI (33310) I: 00[0m
+[0;32mI (34310) I: 00[0m
+[0;32mI (35310) I: 00[0m
+[0;32mI (36310) I: 00[0m
+[0;32mI (37310) I: 00[0m
+[0;32mI (38310) I: 00[0m
+[0;32mI (39310) I: 00[0m
+[0;32mI (40310) I: 00[0m
+[0;32mI (41310) I: 00[0m
+[0;32mI (42310) I: 00[0m
+[0;32mI (43310) I: 00[0m
+[0;32mI (44310) I: 00[0m
+[0;32mI (45310) I: 00[0m
+[0;32mI (46310) I: 00[0m
+[0;32mI (47310) I: 00[0m
+[0;32mI (48310) I: 00[0m
+[0;32mI (49310) I: 00[0m
+[0;32mI (50310) I: 00[0m
+[0;32mI (51310) =>: 0[0m
+[0;32mI (51310) I: 00[0m
+[0;32mI (52310) =>: -1[0m
+[0;32mI (52310) I: 00[0m
+[0;32mI (53310) =>: -2[0m
+[0;32mI (53310) I: 00[0m
+[0;32mI (54310) =>: -3[0m
+[0;32mI (54310) I: 00[0m
+[0;32mI (55310) =>: -4[0m
+[0;32mI (55310) I: 00[0m
+[0;32mI (56310) =>: -5[0m
+[0;32mI (56310) I: 00[0m
+[0;32mI (57310) =>: -6[0m
+[0;32mI (57310) I: 00[0m
+[0;32mI (58310) =>: -7[0m
+[0;32mI (58310) I: 00[0m
+[0;32mI (59310) =>: 52[0m
+[0;32mI (59310) I: 00[0m
+[0;32mI (60310) =>: 51[0m
+[0;32mI (60310) I: 00[0m
+[0;32mI (61310) =>: 50[0m
+[0;32mI (61310) I: 00[0m
+[0;32mI (62310) =>: 49[0m
+[0;32mI (62310) I: 00[0m
+[0;32mI (63310) =>: 48[0m
+[0;32mI (63310) I: 00[0m
+[0;32mI (64310) =>: 47[0m
+[0;32mI (64310) I: 00[0m
+[0;32mI (65310) =>: 46[0m
+[0;32mI (65310) I: 00[0m
+[0;32mI (66310) =>: 45[0m
+[0;32mI (66310) I: 00[0m
+[0;32mI (67310) =>: 44[0m
+[0;32mI (67310) I: 00[0m
+[0;32mI (68310) =>: 43[0m
+[0;32mI (68310) I: 00[0m
+[0;32mI (69310) =>: 42[0m
+[0;32mI (69310) I: 00[0m
+[0;32mI (70310) =>: 41[0m
+[0;32mI (70310) I: 00[0m
+[0;32mI (71310) =>: 40[0m
+[0;32mI (71310) I: 00[0m
+[0;32mI (72310) =>: 39[0m
+[0;32mI (72310) I: 00[0m
+[0;32mI (73310) =>: 38[0m
+[0;32mI (73310) I: 00[0m
+[0;32mI (74310) =>: 37[0m
+[0;32mI (74310) I: 00[0m
+[0;32mI (75310) =>: 36[0m
+[0;32mI (75310) I: 00[0m
+[0;32mI (76310) =>: 35[0m
+[0;32mI (76310) I: 00[0m
+[0;32mI (77310) =>: 34[0m
+[0;32mI (77310) I: 00[0m
+[0;32mI (78310) =>: 33[0m
+[0;32mI (78310) I: 00[0m
+[0;32mI (79310) =>: 32[0m
+[0;32mI (79310) I: 00[0m
+[0;32mI (80310) =>: 31[0m
+[0;32mI (80310) I: 00[0m
+[0;32mI (81310) =>: 30[0m
+[0;32mI (81310) I: 00[0m
+[0;32mI (82310) =>: 29[0m
+[0;32mI (82310) I: 00[0m
+[0;32mI (83310) =>: 28[0m
+[0;32mI (83310) I: 00[0m
+[0;32mI (84310) =>: 27[0m
+[0;32mI (84310) I: 00[0m
+[0;32mI (85310) =>: 26[0m
+[0;32mI (85310) I: 00[0m
+[0;32mI (86310) =>: 25[0m
+[0;32mI (86310) I: 00[0m
+[0;32mI (87310) =>: 24[0m
+[0;32mI (87310) I: 00[0m
+[0;32mI (88310) =>: 23[0m
+[0;32mI (88310) I: 00[0m
+[0;32mI (89310) =>: 22[0m
+[0;32mI (89310) I: 00[0m
+[0;32mI (90310) =>: 21[0m
+[0;32mI (90310) I: 00[0m
+[0;32mI (91310) =>: 20[0m
+[0;32mI (91310) I: 00[0m
+[0;32mI (92310) =>: 19[0m
+[0;32mI (92310) I: 00[0m
+[0;32mI (93310) =>: 18[0m
+[0;32mI (93310) I: 00[0m
+[0;32mI (94310) =>: 17[0m
+[0;32mI (94310) I: 00[0m
+[0;32mI (95310) =>: 16[0m
+[0;32mI (95310) I: 00[0m
+[0;32mI (96310) =>: 15[0m
+[0;32mI (96310) I: 00[0m
+[0;32mI (97310) =>: 14[0m
+[0;32mI (97310) 

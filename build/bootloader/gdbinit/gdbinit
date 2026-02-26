@@ -1,0 +1,2 @@
+source /home/salah/projects/embedded/cazio/build/bootloader/gdbinit/symbols
+source /home/salah/projects/embedded/cazio/build/bootloader/gdbinit/connect

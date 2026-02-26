@@ -1,0 +1,691 @@
+Command: /home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/salah/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/salah/projects/embedded/cazio/build/cazio.elf /home/salah/projects/embedded/cazio/build/bootloader/bootloader.elf -m '/home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/salah/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 30 2026 17:17:10[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0baf4h ( 47860) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001bb1c vaddr=3ffb0000 size=02420h (  9248) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001df44 vaddr=40080000 size=020d4h (  8404) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=143b0h ( 82864) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000343d8 vaddr=400820d4 size=0b854h ( 47188) load[0m
+[0;32mI (161) esp_image: segment 5: paddr=0003fc34 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (168) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     cazio[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (200) app_init: Compile time:     Feb  4 2026 21:04:03[0m
+[0;32mI (205) app_init: ELF file SHA256:  c9803b2ad...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (213) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (217) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (225) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFB3158 len 0002CEA8 (179 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D928 len 000126D8 (73 KiB): IRAM[0m
+[0;33mW (259) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+Probing SSD1306...
+SSD1306 detected
+[0;32mI (300) main_task: Returned from app_main()[0m
+[0;32mI (300) I: 00[0m
+[0;32mI (1310) I: 00[0m
+[0;32mI (2310) I: 00[0m
+[0;32mI (3310) I: 00[0m
+[0;32mI (4310) I: 00[0m
+[0;32mI (5310) I: 00[0m
+[0;32mI (6310) I: 00[0m
+[0;32mI (7310) I: 00[0m
+[0;32mI (8310) I: 00[0m
+[0;32mI (8620) isr : : hi[0m
+[0;32mI (8630) isr : : hi[0m
+[0;32mI (8640) isr : : hi[0m
+[0;32mI (8650) isr : : hi[0m
+[0;32mI (8660) isr : : hi[0m
+[0;32mI (8670) isr : : hi[0m
+[0;32mI (8680) isr : : hi[0m
+[0;32mI (8690) isr : : hi[0m
+[0;32mI (8700) isr : : hi[0m
+[0;32mI (8710) isr : : hi[0m
+[0;32mI (8720) isr : : hi[0m
+[0;32mI (8730) isr : : hi[0m
+[0;32mI (8740) isr : : hi[0m
+[0;32mI (8750) isr : : hi[0m
+[0;32mI (8760) isr : : hi[0m
+[0;32mI (8770) isr : : hi[0m
+[0;32mI (8780) isr : : hi[0m
+[0;32mI (8790) isr : : hi[0m
+[0;32mI (8800) isr : : hi[0m
+[0;32mI (8810) isr : : hi[0m
+[0;32mI (8820) isr : : hi[0m
+[0;32mI (8830) isr : : hi[0m
+[0;32mI (8840) isr : : hi[0m
+[0;32mI (8850) isr : : hi[0m
+[0;32mI (8860) isr : : hi[0m
+[0;32mI (8870) isr : : hi[0m
+[0;32mI (8880) isr : : hi[0m
+[0;32mI (8890) isr : : hi[0m
+[0;32mI (8900) isr : : hi[0m
+[0;32mI (8910) isr : : hi[0m
+[0;32mI (8920) isr : : hi[0m
+[0;32mI (8930) isr : : hi[0m
+[0;32mI (8940) isr : : hi[0m
+[0;32mI (8950) isr : : hi[0m
+[0;32mI (8960) isr : : hi[0m
+[0;32mI (8970) isr : : hi[0m
+[0;32mI (8980) isr : : hi[0m
+[0;32mI (8990) isr : : hi[0m
+[0;32mI (9000) isr : : hi[0m
+[0;32mI (9010) isr : : hi[0m
+[0;32mI (9020) isr : : hi[0m
+[0;32mI (9030) isr : : hi[0m
+[0;32mI (9040) isr : : hi[0m
+[0;32mI (9050) isr : : hi[0m
+[0;32mI (9060) isr : : hi[0m
+[0;32mI (9070) isr : : hi[0m
+[0;32mI (9080) isr : : hi[0m
+[0;32mI (9090) isr : : hi[0m
+[0;32mI (9100) isr : : hi[0m
+[0;32mI (9110) isr : : hi[0m
+[0;32mI (9120) isr : : hi[0m
+[0;32mI (9130) isr : : hi[0m
+[0;32mI (9140) isr : : hi[0m
+[0;32mI (9150) isr : : hi[0m
+[0;32mI (9160) isr : : hi[0m
+[0;32mI (9170) isr : : hi[0m
+[0;32mI (9180) isr : : hi[0m
+[0;32mI (9190) isr : : hi[0m
+[0;32mI (9200) isr : : hi[0m
+[0;32mI (9210) isr : : hi[0m
+[0;32mI (9220) isr : : hi[0m
+[0;32mI (9230) isr : : hi[0m
+[0;32mI (9240) isr : : hi[0m
+[0;32mI (9250) isr : : hi[0m
+[0;32mI (9260) isr : : hi[0m
+[0;32mI (9270) isr : : hi[0m
+[0;32mI (9280) isr : : hi[0m
+[0;32mI (9290) isr : : hi[0m
+[0;32mI (9300) isr : : hi[0m
+[0;32mI (9310) isr : : hi[0m
+[0;32mI (9310) I: 00[0m
+[0;32mI (9350) isr : : hi[0m
+[0;32mI (9360) isr : : hi[0m
+[0;32mI (9370) isr : : hi[0m
+[0;32mI (9380) isr : : hi[0m
+[0;32mI (9390) isr : : hi[0m
+[0;32mI (9400) isr : : hi[0m
+[0;32mI (9410) isr : : hi[0m
+[0;32mI (9420) isr : : hi[0m
+[0;32mI (9430) isr : : hi[0m
+[0;32mI (9440) isr : : hi[0m
+[0;32mI (9450) isr : : hi[0m
+[0;32mI (9460) isr : : hi[0m
+[0;32mI (9470) isr : : hi[0m
+[0;32mI (9480) isr : : hi[0m
+[0;32mI (9490) isr : : hi[0m
+[0;32mI (9500) isr : : hi[0m
+[0;32mI (9510) isr : : hi[0m
+[0;32mI (9520) isr : : hi[0m
+[0;32mI (9530) isr : : hi[0m
+[0;32mI (9540) isr : : hi[0m
+[0;32mI (9550) isr : : hi[0m
+[0;32mI (9560) isr : : hi[0m
+[0;32mI (9570) isr : : hi[0m
+[0;32mI (9580) isr : : hi[0m
+[0;32mI (9590) isr : : hi[0m
+[0;32mI (9600) isr : : hi[0m
+[0;32mI (9610) isr : : hi[0m
+[0;32mI (9620) isr : : hi[0m
+[0;32mI (9630) isr : : hi[0m
+[0;32mI (9640) isr : : hi[0m
+[0;32mI (9650) isr : : hi[0m
+[0;32mI (9660) isr : : hi[0m
+[0;32mI (9670) isr : : hi[0m
+[0;32mI (9680) isr : : hi[0m
+[0;32mI (9690) isr : : hi[0m
+[0;32mI (9700) isr : : hi[0m
+[0;32mI (9710) isr : : hi[0m
+[0;32mI (9720) isr : : hi[0m
+[0;32mI (9730) isr : : hi[0m
+[0;32mI (9740) isr : : hi[0m
+[0;32mI (9750) isr : : hi[0m
+[0;32mI (9760) isr : : hi[0m
+[0;32mI (9770) isr : : hi[0m
+[0;32mI (9780) isr : : hi[0m
+[0;32mI (9790) isr : : hi[0m
+[0;32mI (9800) isr : : hi[0m
+[0;32mI (9810) isr : : hi[0m
+[0;32mI (9820) isr : : hi[0m
+[0;32mI (9830) isr : : hi[0m
+[0;32mI (9840) isr : : hi[0m
+[0;32mI (9850) isr : : hi[0m
+[0;32mI (9860) isr : : hi[0m
+[0;32mI (9870) isr : : hi[0m
+[0;32mI (9880) isr : : hi[0m
+[0;32mI (9890) isr : : hi[0m
+[0;32mI (9900) isr : : hi[0m
+[0;32mI (9910) isr : : hi[0m
+[0;32mI (9920) isr : : hi[0m
+[0;32mI (9930) isr : : hi[0m
+[0;32mI (9940) isr : : hi[0m
+[0;32mI (9950) isr : : hi[0m
+[0;32mI (9960) isr : : hi[0m
+[0;32mI (9970) isr : : hi[0m
+[0;32mI (9980) isr : : hi[0m
+[0;32mI (9990) isr : : hi[0m
+[0;32mI (10000) isr : : hi[0m
+[0;32mI (10010) isr : : hi[0m
+[0;32mI (10020) isr : : hi[0m
+[0;32mI (10030) isr : : hi[0m
+[0;32mI (10040) isr : : hi[0m
+[0;32mI (10050) isr : : hi[0m
+[0;32mI (10060) isr : : hi[0m
+[0;32mI (10070) isr : : hi[0m
+[0;32mI (10080) isr : : hi[0m
+[0;32mI (10090) isr : : hi[0m
+[0;32mI (10100) isr : : hi[0m
+[0;32mI (10110) isr : : hi[0m
+[0;32mI (10120) isr : : hi[0m
+[0;32mI (10130) isr : : hi[0m
+[0;32mI (10140) isr : : hi[0m
+[0;32mI (10150) isr : : hi[0m
+[0;32mI (10160) isr : : hi[0m
+[0;32mI (10170) isr : : hi[0m
+[0;32mI (10180) isr : : hi[0m
+[0;32mI (10190) isr : : hi[0m
+[0;32mI (10200) isr : : hi[0m
+[0;32mI (10210) isr : : hi[0m
+[0;32mI (10220) isr : : hi[0m
+[0;32mI (10230) isr : : hi[0m
+[0;32mI (10240) isr : : hi[0m
+[0;32mI (10250) isr : : hi[0m
+[0;32mI (10260) isr : : hi[0m
+[0;32mI (10270) isr : : hi[0m
+[0;32mI (10280) isr : : hi[0m
+[0;32mI (10290) isr : : hi[0m
+[0;32mI (10300) isr : : hi[0m
+[0;32mI (10310) isr : : hi[0m
+[0;32mI (10310) I: 00[0m
+[0;32mI (10350) isr : : hi[0m
+[0;32mI (10360) isr : : hi[0m
+[0;32mI (10370) isr : : hi[0m
+[0;32mI (10380) isr : : hi[0m
+[0;32mI (10390) isr : : hi[0m
+[0;32mI (10400) isr : : hi[0m
+[0;32mI (10410) isr : : hi[0m
+[0;32mI (10420) isr : : hi[0m
+[0;32mI (10430) isr : : hi[0m
+[0;32mI (10440) isr : : hi[0m
+[0;32mI (10450) isr : : hi[0m
+[0;32mI (10460) isr : : hi[0m
+[0;32mI (10470) isr : : hi[0m
+[0;32mI (10480) isr : : hi[0m
+[0;32mI (10490) isr : : hi[0m
+[0;32mI (10500) isr : : hi[0m
+[0;32mI (10510) isr : : hi[0m
+[0;32mI (10520) isr : : hi[0m
+[0;32mI (10530) isr : : hi[0m
+[0;32mI (10540) isr : : hi[0m
+[0;32mI (10550) isr : : hi[0m
+[0;32mI (10560) isr : : hi[0m
+[0;32mI (10570) isr : : hi[0m
+[0;32mI (10580) isr : : hi[0m
+[0;32mI (10590) isr : : hi[0m
+[0;32mI (10600) isr : : hi[0m
+[0;32mI (10610) isr : : hi[0m
+[0;32mI (10620) isr : : hi[0m
+[0;32mI (10630) isr : : hi[0m
+[0;32mI (10640) isr : : hi[0m
+[0;32mI (10650) isr : : hi[0m
+[0;32mI (10660) isr : : hi[0m
+[0;32mI (10670) isr : : hi[0m
+[0;32mI (10680) isr : : hi[0m
+[0;32mI (10690) isr : : hi[0m
+[0;32mI (10700) isr : : hi[0m
+[0;32mI (10710) isr : : hi[0m
+[0;32mI (10720) isr : : hi[0m
+[0;32mI (10730) isr : : hi[0m
+[0;32mI (10740) isr : : hi[0m
+[0;32mI (10750) isr : : hi[0m
+[0;32mI (10760) isr : : hi[0m
+[0;32mI (10770) isr : : hi[0m
+[0;32mI (10780) isr : : hi[0m
+[0;32mI (10790) isr : : hi[0m
+[0;32mI (10800) isr : : hi[0m
+[0;32mI (10810) isr : : hi[0m
+[0;32mI (10820) isr : : hi[0m
+[0;32mI (10830) isr : : hi[0m
+[0;32mI (10840) isr : : hi[0m
+[0;32mI (10850) isr : : hi[0m
+[0;32mI (10860) isr : : hi[0m
+[0;32mI (10870) isr : : hi[0m
+[0;32mI (10880) isr : : hi[0m
+[0;32mI (10890) isr : : hi[0m
+[0;32mI (10900) isr : : hi[0m
+[0;32mI (10910) isr : : hi[0m
+[0;32mI (10920) isr : : hi[0m
+[0;32mI (10930) isr : : hi[0m
+[0;32mI (10940) isr : : hi[0m
+[0;32mI (10950) isr : : hi[0m
+[0;32mI (10960) isr : : hi[0m
+[0;32mI (10970) isr : : hi[0m
+[0;32mI (10980) isr : : hi[0m
+[0;32mI (10990) isr : : hi[0m
+[0;32mI (11000) isr : : hi[0m
+[0;32mI (11010) isr : : hi[0m
+[0;32mI (11020) isr : : hi[0m
+[0;32mI (11030) isr : : hi[0m
+[0;32mI (11040) isr : : hi[0m
+[0;32mI (11050) isr : : hi[0m
+[0;32mI (11060) isr : : hi[0m
+[0;32mI (11070) isr : : hi[0m
+[0;32mI (11080) isr : : hi[0m
+[0;32mI (11090) isr : : hi[0m
+[0;32mI (11100) isr : : hi[0m
+[0;32mI (11110) isr : : hi[0m
+[0;32mI (11120) isr : : hi[0m
+[0;32mI (11130) isr : : hi[0m
+[0;32mI (11140) isr : : hi[0m
+[0;32mI (11150) isr : : hi[0m
+[0;32mI (11160) isr : : hi[0m
+[0;32mI (11170) isr : : hi[0m
+[0;32mI (11180) isr : : hi[0m
+[0;32mI (11190) isr : : hi[0m
+[0;32mI (11200) isr : : hi[0m
+[0;32mI (11210) isr : : hi[0m
+[0;32mI (11220) isr : : hi[0m
+[0;32mI (11230) isr : : hi[0m
+[0;32mI (11240) isr : : hi[0m
+[0;32mI (11250) isr : : hi[0m
+[0;32mI (11260) isr : : hi[0m
+[0;32mI (11270) isr : : hi[0m
+[0;32mI (11280) isr : : hi[0m
+[0;32mI (11290) isr : : hi[0m
+[0;32mI (11300) isr : : hi[0m
+[0;32mI (11310) isr : : hi[0m
+[0;32mI (11310) I: 00[0m
+[0;32mI (11350) isr : : hi[0m
+[0;32mI (11360) isr : : hi[0m
+[0;32mI (11370) isr : : hi[0m
+[0;32mI (11380) isr : : hi[0m
+[0;32mI (11390) isr : : hi[0m
+[0;32mI (11400) isr : : hi[0m
+[0;32mI (11410) isr : : hi[0m
+[0;32mI (11420) isr : : hi[0m
+[0;32mI (11430) isr : : hi[0m
+[0;32mI (11440) isr : : hi[0m
+[0;32mI (11450) isr : : hi[0m
+[0;32mI (11460) isr : : hi[0m
+[0;32mI (11470) isr : : hi[0m
+[0;32mI (11480) isr : : hi[0m
+[0;32mI (11490) isr : : hi[0m
+[0;32mI (11500) isr : : hi[0m
+[0;32mI (11510) isr : : hi[0m
+[0;32mI (11520) isr : : hi[0m
+[0;32mI (11530) isr : : hi[0m
+[0;32mI (11540) isr : : hi[0m
+[0;32mI (11550) isr : : hi[0m
+[0;32mI (11560) isr : : hi[0m
+[0;32mI (11570) isr : : hi[0m
+[0;32mI (11580) isr : : hi[0m
+[0;32mI (11590) isr : : hi[0m
+[0;32mI (11600) isr : : hi[0m
+[0;32mI (11610) isr : : hi[0m
+[0;32mI (11620) isr : : hi[0m
+[0;32mI (11630) isr : : hi[0m
+[0;32mI (11640) isr : : hi[0m
+[0;32mI (11650) isr : : hi[0m
+[0;32mI (11660) isr : : hi[0m
+[0;32mI (11670) isr : : hi[0m
+[0;32mI (11680) isr : : hi[0m
+[0;32mI (11690) isr : : hi[0m
+[0;32mI (11700) isr : : hi[0m
+[0;32mI (11710) isr : : hi[0m
+[0;32mI (11720) isr : : hi[0m
+[0;32mI (11730) isr : : hi[0m
+[0;32mI (11740) isr : : hi[0m
+[0;32mI (11750) isr : : hi[0m
+[0;32mI (11760) isr : : hi[0m
+[0;32mI (11770) isr : : hi[0m
+[0;32mI (11780) isr : : hi[0m
+[0;32mI (11790) isr : : hi[0m
+[0;32mI (11800) isr : : hi[0m
+[0;32mI (11810) isr : : hi[0m
+[0;32mI (11820) isr : : hi[0m
+[0;32mI (11830) isr : : hi[0m
+[0;32mI (11840) isr : : hi[0m
+[0;32mI (11850) isr : : hi[0m
+[0;32mI (11860) isr : : hi[0m
+[0;32mI (11870) isr : : hi[0m
+[0;32mI (11880) isr : : hi[0m
+[0;32mI (11890) isr : : hi[0m
+[0;32mI (11900) isr : : hi[0m
+[0;32mI (11910) isr : : hi[0m
+[0;32mI (11920) isr : : hi[0m
+[0;32mI (11930) isr : : hi[0m
+[0;32mI (11940) isr : : hi[0m
+[0;32mI (11950) isr : : hi[0m
+[0;32mI (11960) isr : : hi[0m
+[0;32mI (11970) isr : : hi[0m
+[0;32mI (11980) isr : : hi[0m
+[0;32mI (11990) isr : : hi[0m
+[0;32mI (12000) isr : : hi[0m
+[0;32mI (12010) isr : : hi[0m
+[0;32mI (12020) isr : : hi[0m
+[0;32mI (12030) isr : : hi[0m
+[0;32mI (12040) isr : : hi[0m
+[0;32mI (12050) isr : : hi[0m
+[0;32mI (12060) isr : : hi[0m
+[0;32mI (12070) isr : : hi[0m
+[0;32mI (12080) isr : : hi[0m
+[0;32mI (12090) isr : : hi[0m
+[0;32mI (12100) isr : : hi[0m
+[0;32mI (12110) isr : : hi[0m
+[0;32mI (12120) isr : : hi[0m
+[0;32mI (12130) isr : : hi[0m
+[0;32mI (12140) isr : : hi[0m
+[0;32mI (12150) isr : : hi[0m
+[0;32mI (12160) isr : : hi[0m
+[0;32mI (12170) isr : : hi[0m
+[0;32mI (12180) isr : : hi[0m
+[0;32mI (12190) isr : : hi[0m
+[0;32mI (12200) isr : : hi[0m
+[0;32mI (12210) isr : : hi[0m
+[0;32mI (12220) isr : : hi[0m
+[0;32mI (12230) isr : : hi[0m
+[0;32mI (12240) isr : : hi[0m
+[0;32mI (12250) isr : : hi[0m
+[0;32mI (12260) isr : : hi[0m
+[0;32mI (12270) isr : : hi[0m
+[0;32mI (12280) isr : : hi[0m
+[0;32mI (12290) isr : : hi[0m
+[0;32mI (12300) isr : : hi[0m
+[0;32mI (12310) isr : : hi[0m
+[0;32mI (12310) I: 00[0m
+[0;32mI (12350) isr : : hi[0m
+[0;32mI (12360) isr : : hi[0m
+[0;32mI (12370) isr : : hi[0m
+[0;32mI (12380) isr : : hi[0m
+[0;32mI (12390) isr : : hi[0m
+[0;32mI (12400) isr : : hi[0m
+[0;32mI (12410) isr : : hi[0m
+[0;32mI (12420) isr : : hi[0m
+[0;32mI (12430) isr : : hi[0m
+[0;32mI (12440) isr : : hi[0m
+[0;32mI (12450) isr : : hi[0m
+[0;32mI (12460) isr : : hi[0m
+[0;32mI (12470) isr : : hi[0m
+[0;32mI (12480) isr : : hi[0m
+[0;32mI (12490) isr : : hi[0m
+[0;32mI (12500) isr : : hi[0m
+[0;32mI (12510) isr : : hi[0m
+[0;32mI (12520) isr : : hi[0m
+[0;32mI (12530) isr : : hi[0m
+[0;32mI (12540) isr : : hi[0m
+[0;32mI (12550) isr : : hi[0m
+[0;32mI (12560) isr : : hi[0m
+[0;32mI (12570) isr : : hi[0m
+[0;32mI (12580) isr : : hi[0m
+[0;32mI (12590) isr : : hi[0m
+[0;32mI (12600) isr : : hi[0m
+[0;32mI (12610) isr : : hi[0m
+[0;32mI (12620) isr : : hi[0m
+[0;32mI (12630) isr : : hi[0m
+[0;32mI (12640) isr : : hi[0m
+[0;32mI (12650) isr : : hi[0m
+[0;32mI (12660) isr : : hi[0m
+[0;32mI (12670) isr : : hi[0m
+[0;32mI (12680) isr : : hi[0m
+[0;32mI (12690) isr : : hi[0m
+[0;32mI (12700) isr : : hi[0m
+[0;32mI (12710) isr : : hi[0m
+[0;32mI (12720) isr : : hi[0m
+[0;32mI (12730) isr : : hi[0m
+[0;32mI (12740) isr : : hi[0m
+[0;32mI (12750) isr : : hi[0m
+[0;32mI (12760) isr : : hi[0m
+[0;32mI (12770) isr : : hi[0m
+[0;32mI (12780) isr : : hi[0m
+[0;32mI (12790) isr : : hi[0m
+[0;32mI (12800) isr : : hi[0m
+[0;32mI (12810) isr : : hi[0m
+[0;32mI (12820) isr : : hi[0m
+[0;32mI (12830) isr : : hi[0m
+[0;32mI (12840) isr : : hi[0m
+[0;32mI (12850) isr : : hi[0m
+[0;32mI (12860) isr : : hi[0m
+[0;32mI (12870) isr : : hi[0m
+[0;32mI (12880) isr : : hi[0m
+[0;32mI (12890) isr : : hi[0m
+[0;32mI (12900) isr : : hi[0m
+[0;32mI (12910) isr : : hi[0m
+[0;32mI (12920) isr : : hi[0m
+[0;32mI (12930) isr : : hi[0m
+[0;32mI (12940) isr : : hi[0m
+[0;32mI (12950) isr : : hi[0m
+[0;32mI (12960) isr : : hi[0m
+[0;32mI (12970) isr : : hi[0m
+[0;32mI (12980) isr : : hi[0m
+[0;32mI (12990) isr : : hi[0m
+[0;32mI (13000) isr : : hi[0m
+[0;32mI (13010) isr : : hi[0m
+[0;32mI (13020) isr : : hi[0m
+[0;32mI (13030) isr : : hi[0m
+[0;32mI (13040) isr : : hi[0m
+[0;32mI (13050) isr : : hi[0m
+[0;32mI (13060) isr : : hi[0m
+[0;32mI (13070) isr : : hi[0m
+[0;32mI (13080) isr : : hi[0m
+[0;32mI (13090) isr : : hi[0m
+[0;32mI (13100) isr : : hi[0m
+[0;32mI (13110) isr : : hi[0m
+[0;32mI (13120) isr : : hi[0m
+[0;32mI (13130) isr : : hi[0m
+[0;32mI (13140) isr : : hi[0m
+[0;32mI (13150) isr : : hi[0m
+[0;32mI (13160) isr : : hi[0m
+[0;32mI (13170) isr : : hi[0m
+[0;32mI (13180) isr : : hi[0m
+[0;32mI (13190) isr : : hi[0m
+[0;32mI (13200) isr : : hi[0m
+[0;32mI (13210) isr : : hi[0m
+[0;32mI (13220) isr : : hi[0m
+[0;32mI (13230) isr : : hi[0m
+[0;32mI (13240) isr : : hi[0m
+[0;32mI (13250) isr : : hi[0m
+[0;32mI (13260) isr : : hi[0m
+[0;32mI (13270) isr : : hi[0m
+[0;32mI (13280) isr : : hi[0m
+[0;32mI (13290) isr : : hi[0m
+[0;32mI (13300) isr : : hi[0m
+[0;32mI (13310) isr : : hi[0m
+[0;32mI (13310) I: 00[0m
+[0;32mI (13350) isr : : hi[0m
+[0;32mI (13360) isr : : hi[0m
+[0;32mI (13370) isr : : hi[0m
+[0;32mI (13380) isr : : hi[0m
+[0;32mI (13390) isr : : hi[0m
+[0;32mI (13400) isr : : hi[0m
+[0;32mI (13410) isr : : hi[0m
+[0;32mI (13420) isr : : hi[0m
+[0;32mI (13430) isr : : hi[0m
+[0;32mI (13440) isr : : hi[0m
+[0;32mI (13450) isr : : hi[0m
+[0;32mI (13460) isr : : hi[0m
+[0;32mI (13470) isr : : hi[0m
+[0;32mI (13480) isr : : hi[0m
+[0;32mI (13490) isr : : hi[0m
+[0;32mI (13500) isr : : hi[0m
+[0;32mI (13510) isr : : hi[0m
+[0;32mI (13520) isr : : hi[0m
+[0;32mI (13530) isr : : hi[0m
+[0;32mI (13540) isr : : hi[0m
+[0;32mI (13550) isr : : hi[0m
+[0;32mI (13560) isr : : hi[0m
+[0;32mI (13570) isr : : hi[0m
+[0;32mI (13580) isr : : hi[0m
+[0;32mI (13590) isr : : hi[0m
+[0;32mI (13600) isr : : hi[0m
+[0;32mI (13610) isr : : hi[0m
+[0;32mI (13620) isr : : hi[0m
+[0;32mI (13630) isr : : hi[0m
+[0;32mI (13640) isr : : hi[0m
+[0;32mI (13650) isr : : hi[0m
+[0;32mI (13660) isr : : hi[0m
+[0;32mI (13670) isr : : hi[0m
+[0;32mI (13680) isr : : hi[0m
+[0;32mI (13690) isr : : hi[0m
+[0;32mI (13700) isr : : hi[0m
+[0;32mI (13710) isr : : hi[0m
+[0;32mI (13720) isr : : hi[0m
+[0;32mI (13730) isr : : hi[0m
+[0;32mI (13740) isr : : hi[0m
+[0;32mI (13750) isr : : hi[0m
+[0;32mI (13760) isr : : hi[0m
+[0;32mI (13770) isr : : hi[0m
+[0;32mI (13780) isr : : hi[0m
+[0;32mI (13790) isr : : hi[0m
+[0;32mI (13800) isr : : hi[0m
+[0;32mI (13810) isr : : hi[0m
+[0;32mI (13820) isr : : hi[0m
+[0;32mI (13830) isr : : hi[0m
+[0;32mI (13840) isr : : hi[0m
+[0;32mI (13850) isr : : hi[0m
+[0;32mI (13860) isr : : hi[0m
+[0;32mI (13870) isr : : hi[0m
+[0;32mI (13880) isr : : hi[0m
+[0;32mI (13890) isr : : hi[0m
+[0;32mI (13900) isr : : hi[0m
+[0;32mI (13910) isr : : hi[0m
+[0;32mI (13920) isr : : hi[0m
+[0;32mI (13930) isr : : hi[0m
+[0;32mI (13940) isr : : hi[0m
+[0;32mI (13950) isr : : hi[0m
+[0;32mI (13960) isr : : hi[0m
+[0;32mI (13970) isr : : hi[0m
+[0;32mI (13980) isr : : hi[0m
+[0;32mI (13990) isr : : hi[0m
+[0;32mI (14000) isr : : hi[0m
+[0;32mI (14010) isr : : hi[0m
+[0;32mI (14020) isr : : hi[0m
+[0;32mI (14030) isr : : hi[0m
+[0;32mI (14040) isr : : hi[0m
+[0;32mI (14050) isr : : hi[0m
+[0;32mI (14060) isr : : hi[0m
+[0;32mI (14070) isr : : hi[0m
+[0;32mI (14080) isr : : hi[0m
+[0;32mI (14090) isr : : hi[0m
+[0;32mI (14100) isr : : hi[0m
+[0;32mI (14110) isr : : hi[0m
+[0;32mI (14120) isr : : hi[0m
+[0;32mI (14130) isr : : hi[0m
+[0;32mI (14140) isr : : hi[0m
+[0;32mI (14150) isr : : hi[0m
+[0;32mI (14160) isr : : hi[0m
+[0;32mI (14170) isr : : hi[0m
+[0;32mI (14180) isr : : hi[0m
+[0;32mI (14190) isr : : hi[0m
+[0;32mI (14200) isr : : hi[0m
+[0;32mI (14210) isr : : hi[0m
+[0;32mI (14220) isr : : hi[0m
+[0;32mI (14230) isr : : hi[0m
+[0;32mI (14240) isr : : hi[0m
+[0;32mI (14250) isr : : hi[0m
+[0;32mI (14260) isr : : hi[0m
+[0;32mI (14270) isr : : hi[0m
+[0;32mI (14280) isr : : hi[0m
+[0;32mI (14290) isr : : hi[0m
+[0;32mI (14300) isr : : hi[0m
+[0;32mI (14310) isr : : hi[0m
+[0;32mI (14310) I: 00[0m
+[0;32mI (14350) isr : : hi[0m
+[0;32mI (14360) isr : : hi[0m
+[0;32mI (14370) isr : : hi[0m
+[0;32mI (14380) isr : : hi[0m
+[0;32mI (14390) isr : : hi[0m
+[0;32mI (14400) isr : : hi[0m
+[0;32mI (14410) isr : : hi[0m
+[0;32mI (14420) isr : : hi[0m
+[0;32mI (14430) isr : : hi[0m
+[0;32mI (14440) isr : : hi[0m
+[0;32mI (14450) isr : : hi[0m
+[0;32mI (14460) isr : : hi[0m
+[0;32mI (14470) isr : : hi[0m
+[0;32mI (14480) isr : : hi[0m
+[0;32mI (14490) isr : : hi[0m
+[0;32mI (14500) isr : : hi[0m
+[0;32mI (14510) isr : : hi[0m
+[0;32mI (14520) isr : : hi[0m
+[0;32mI (14530) isr : : hi[0m
+[0;32mI (14540) isr : : hi[0m
+[0;32mI (14550) isr : : hi[0m
+[0;32mI (14560) isr : : hi[0m
+[0;32mI (14570) isr : : hi[0m
+[0;32mI (14580) isr : : hi[0m
+[0;32mI (14590) isr : : hi[0m
+[0;32mI (14600) isr : : hi[0m
+[0;32mI (14610) isr : : hi[0m
+[0;32mI (14620) isr : : hi[0m
+[0;32mI (14630) isr : : hi[0m
+[0;32mI (14640) isr : : hi[0m
+[0;32mI (14650) isr : : hi[0m
+[0;32mI (14660) isr : : hi[0m
+[0;32mI (14670) isr : : hi[0m
+[0;32mI (14680) isr : : hi[0m
+[0;32mI (14690) isr : : hi[0m
+[0;32mI (14700) isr : : hi[0m
+[0;32mI (14710) isr : : hi[0m
+[0;32mI (14720) isr : : hi[0m
+[0;32mI (14730) isr : : hi[0m
+[0;32mI (14740) isr : : hi[0m
+[0;32mI (14750) isr : : hi[0m
+[0;32mI (14760) isr : : hi[0m
+[0;32mI (14770) isr : : hi[0m
+[0;32mI (14780) isr : : hi[0m
+[0;32mI (15310) I: 00[0m
+[0;32mI (16310) I: 00[0m
+[0;32mI (17310) I: 00[0m
+[0;32mI (18310) I: 00[0m
+[0;32mI (19310) I: 00[0m
+[0;32mI (20310) I: 00[0m
+[0;32mI (21310) I: 00[0m
+[0;32mI (22310) I: 00[0m
+[0;32mI (23310) I: 00[0m
+[0;32mI (24310) I: 00[0m
+[0;32mI (25310) I: 00[0m
+[0;32mI (26310) I: 00[0m
+[0;32mI (27310) I: 00[0m
+[0;32mI (28310) I: 00[0m
+[0;32mI (29310) I: 00[0m
+[0;32m

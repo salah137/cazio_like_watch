@@ -1,0 +1,227 @@
+Command: /home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/salah/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/salah/projects/embedded/cazio/build/cazio.elf /home/salah/projects/embedded/cazio/build/bootloader/bootloader.elf -m '/home/salah/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/salah/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 30 2026 17:17:10[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b27ch ( 45692) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001b2a4 vaddr=3ffb0000 size=02410h (  9232) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001d6bc vaddr=40080000 size=0295ch ( 10588) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12954h ( 76116) map[0m
+[0;32mI (139) esp_image: segment 4: paddr=0003297c vaddr=4008295c size=0ac08h ( 44040) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003d58c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (183) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (183) cpu_start: Pro cpu start user code[0m
+[0;32mI (183) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (185) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     cazio[0m
+[0;32mI (193) app_init: App version:      1[0m
+[0;32mI (196) app_init: Compile time:     Feb  4 2026 21:04:03[0m
+[0;32mI (201) app_init: ELF file SHA256:  e786ad08d...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (213) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (217) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 3FFB3118 len 0002CEE8 (179 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (243) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 4008D564 len 00012A9C (74 KiB): IRAM[0m
+[0;33mW (255) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (267) spi_flash: detected chip: generic[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (273) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+Probing SSD1306...
+SSD1306 detected
+[0;32mI (296) I: 1�
+[0;32mI (326) I: 1�
+[0;32mI (356) I: 1�
+[0;32mI (386) I: 1�
+[0;32mI (426) I: 1�
+[0;32mI (456) I: 1�
+[0;32mI (486) I: 1�
+[0;32mI (516) I: 1�
+[0;32mI (546) I: 1�
+[0;32mI (576) I: 1�
+[0;32mI (606) I: 1�
+[0;32mI (636) I: 1�
+[0;32mI (666) I: 1�
+[0;32mI (706) I: 1�
+[0;32mI (736) I: 1�
+[0;32mI (766) I: 1�
+[0;32mI (796) I: 1�
+[0;32mI (826) I: 1�
+[0;32mI (856) I: 1�
+[0;32mI (886) I: 1�
+[0;32mI (916) I: 1�
+[0;32mI (946) I: 1�
+[0;32mI (976) I: 1�
+[0;32mI (1016) I: 1�
+[0;32mI (1046) I: 1�
+[0;32mI (1076) I: 1�
+[0;32mI (1106) I: 1�
+[0;32mI (1136) I: 1�
+[0;32mI (1166) I: 1�
+[0;32mI (1196) I: 1�
+[0;32mI (1226) I: 1�
+[0;32mI (1256) I: 1�
+[0;32mI (1286) I: 1�
+[0;32mI (1326) I: 1�
+[0;32mI (1356) I: 1�
+[0;32mI (1386) I: 1�
+[0;32mI (1416) I: 1�
+[0;32mI (1446) I: 1�
+[0;32mI (1476) I: 1�
+[0;32mI (1506) I: 1�
+[0;32mI (1536) I: 1�
+[0;32mI (1566) I: 1�
+[0;32mI (1606) I: 1�
+[0;32mI (1636) I: 1�
+[0;32mI (1666) I: 1�
+[0;32mI (1696) I: 1�
+[0;32mI (1726) I: 1�
+[0;32mI (1756) I: 1�
+[0;32mI (1786) I: 1�
+[0;32mI (1816) I: 1�
+[0;32mI (1846) I: 1�
+[0;32mI (1876) I: 1�
+[0;32mI (1916) I: 1�
+[0;32mI (1946) I: 1�
+[0;32mI (1976) I: 1�
+[0;32mI (2006) I: 1�
+[0;32mI (2036) I: 1�
+[0;32mI (2066) I: 1�
+[0;32mI (2096) I: 1�
+[0;32mI (2126) I: 1�
+[0;32mI (2156) I: 1�
+[0;32mI (2186) I: 1�
+[0;32mI (2226) I: 1�
+[0;32mI (2256) I: 1�
+[0;32mI (2286) I: 1�
+[0;32mI (2316) I: 1�
+[0;32mI (2346) I: 1�
+[0;32mI (2376) I: 1�
+[0;32mI (2406) I: 1�
+[0;32mI (2436) I: 1�
+[0;32mI (2466) I: 1�
+[0;32mI (2506) I: 1�
+[0;32mI (2536) I: 1�
+[0;32mI (2566) I: 1�
+[0;32mI (2596) I: 1�
+[0;32mI (2626) I: 1�
+[0;32mI (2656) I: 1�
+[0;32mI (2686) I: 1�
+[0;32mI (2716) I: 1�
+[0;32mI (2746) I: 1�
+[0;32mI (2776) I: 1�
+[0;32mI (2816) I: 1�
+[0;32mI (2846) I: 1�
+[0;32mI (2876) I: 1�
+[0;32mI (2906) I: 1�
+[0;32mI (2936) I: 1�
+[0;32mI (2966) I: 1�
+[0;32mI (2996) I: 1�
+[0;32mI (3026) I: 1�
+[0;32mI (3056) I: 1�
+[0;32mI (3086) I: 1�
+[0;32mI (3126) I: 1�
+[0;32mI (3156) I: 1�
+[0;32mI (3186) I: 1�
+[0;32mI (3216) I: 1�
+[0;32mI (3246) I: 1�
+[0;32mI (3276) I: 1�
+[0;32mI (3306) I: 1�
+[0;32mI (3336) I: 1�
+[0;32mI (3366) I: 1�
+[0;32mI (3406) I: 1�
+[0;32mI (3436) I: 1�
+[0;32mI (3466) I: 1�
+[0;32mI (3496) I: 1�
+[0;32mI (3526) I: 1�
+[0;32mI (3556) I: 1�
+[0;32mI (3586) I: 1�
+[0;32mI (3616) I: 1�
+[0;32mI (3646) I: 1�
+[0;32mI (3676) I: 1�
+[0;32mI (3716) I: 1�
+[0;32mI (3746) I: 1�
+[0;32mI (3776) I: 1�
+[0;32mI (3806) I: 1�
+[0;32mI (3836) I: 1�
+[0;32mI (3866) I: 1�
+[0;32mI (3896) I: 1�
+[0;32mI (3926) I: 1�
+[0;32mI (3956) I: 1�
+[0;32mI (3986) I: 1�
+[0;32mI (4026) I: 1�
+[0;32mI (4056) I: 1�
+[0;32mI (4086) I: 1�
+[0;32mI (4116) I: 1�
+[0;32mI (4146) I: 1�
+[0;32mI (4176) I: 1�
+[0;32mI (4206) I: 1�
+[0;32mI (4236) I: 1�
+[0;32mI (4266) I: 1�
+[0;32mI (4306) I: 1�
+[0;32mI (4336) I: 1�
+[0;32mI (4366) I: 1�
+[0;32mI (4396) I: 1�
+[0;32mI (4426) I: 1�
+[0;32mI (4456) I: 1�
+[0;32mI (4486) I: 1�
+[0;32mI (4516) I: 1�
+[0;32mI (4546) I: 1�
+[0;32mI (4576) I: 1�
+[0;32mI (4616) I: 1�
+[0;32mI (4646) I: 1�
+[0;32mI (4676) I: 1�
+[0;32mI (4706) I: 1�
+[0;32mI (4736) I: 1�
+[0;32mI (4766) I: 1�
+[0;32mI (4796) I: 1�
+[0;32mI (4826) I: 1�
+[0;32mI (4856) I: 1�
+[0;32mI (4886) I: 1�
+[0;32mI (4926) I: 1�
+[0;32mI (4956) I: 1�
+[0;32mI (4986) I: 1�
+[0;32mI (5016) I: 1�
+[0;32mI (5046) I: 1�
+[0;32mI (5076) I: 1�
+[0;32mI (5106) I: 1�
+[0;32mI (5136) I: 1�
+[0;32mI (5166) I: 1�
+[0;32mI (5206) I: 1�
+[0;32mI (5236) I: 1�
+[0;32mI (5266) I: 1�
+[0;32mI (5296) I: 1�
+[0;32mI (5326) I: 1�
+[0;32mI (5356) I: 1�
+[0;32mI (5386) I: 1�
+[0;32mI (5416) I: 1�
+[0;32mI (544
